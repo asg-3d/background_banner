@@ -210,20 +210,20 @@ Emitter.prototype.hasListeners = function(event) {
 				modulesMediator.emit('columns.widthChanged');
 			}
 
-		} else if (viewportWidth >= 980 && viewportWidth <= 1300) {
+		} else if (viewportWidth >= 1060 && viewportWidth <= 1300) {
 
 			_columns.newColumnsQuantity = 3;
 			if (_columns.newColumnsQuantity != _columns.oldColumnsQuantity) {
 				modulesMediator.emit('columns.widthChanged');
 			}
 
-		} else if (viewportWidth >= 660 && viewportWidth < 980) {
+		} else if (viewportWidth >= 740 && viewportWidth < 1060) {
 
 			_columns.newColumnsQuantity = 2;
 			if (_columns.newColumnsQuantity != _columns.oldColumnsQuantity) {
 				modulesMediator.emit('columns.widthChanged');
 			}
-		} else if (viewportWidth < 660) {
+		} else if (viewportWidth < 740) {
 
 			_columns.newColumnsQuantity = 1;
 			if (_columns.newColumnsQuantity != _columns.oldColumnsQuantity) {
